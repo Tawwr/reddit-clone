@@ -47,7 +47,7 @@ Reddit clone built with Reactjs, and Nodejs.
 
 -----
 ## Experience required:
-- 👶 Beginner ✔️
+- 👶 Beginner ✅
 - 🧒🏻 Intermediate 
 - 🦸‍♂️ Advanced
 
