@@ -21,12 +21,12 @@ Reddit clone built with Reactjs, and Nodejs.
 ------
 
 ## Features:
-- Write new post.
-- Remove post.
-- Comment existing post.
-- Remove comment.
-- Upvote, or downvote.
-- Save posts, comments, and votes to database.
+- :memo: Write new post.
+- :wastebasket: Remove post.
+- :pencil2: Comment on existing post.
+- :wastebasket: Remove comment.
+- :arrow_up: :arrow_down: Upvote, or downvote.
+- 💾 Save posts, comments, and votes to database.
 
 
 -----
