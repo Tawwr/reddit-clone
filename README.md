@@ -33,10 +33,10 @@ Reddit clone built with Reactjs, and Nodejs.
 
 ## Technologies used:
 - [React JS](https://reactjs.org/)
-- Material UI
-- Formik
-- Node js
-- Express
-- Postgresql
-- Supabase.
+- [Material UI](https://mui.com/)
+- [Formik](https://formik.org/)
+- [Node js](https://nodejs.org/en/)
+- [Express](https://expressjs.com/)
+- [Postgresql](https://www.postgresql.org/)
+- [Supabase.](https://supabase.com/)
 
