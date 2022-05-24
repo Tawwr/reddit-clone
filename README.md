@@ -32,7 +32,7 @@ Reddit clone built with Reactjs, and Nodejs.
 -----
 
 ## Technologies used:
-- React JS
+- [React JS](https://reactjs.org/)
 - Material UI
 - Formik
 - Node js
