@@ -40,3 +40,14 @@ Reddit clone built with Reactjs, and Nodejs.
 - [Postgresql](https://www.postgresql.org/)
 - [Supabase.](https://supabase.com/)
 
+-----
+
+## Time required to build: 
+~ 1 week
+
+-----
+## Experience required:
+- 👶 Beginner ✔️
+- 🧒🏻 Intermediate 
+- 🦸‍♂️ Advanced
+
