@@ -33,6 +33,8 @@ Reddit clone built with Reactjs, and Nodejs.
 
 ## Technologies used:
 - [React JS](https://reactjs.org/)
+- [React Redux](https://react-redux.js.org/)
+- [Redux toolkit](https://redux-toolkit.js.org/)
 - [Material UI](https://mui.com/)
 - [Formik](https://formik.org/)
 - [Node js](https://nodejs.org/en/)
