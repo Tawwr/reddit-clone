@@ -16,6 +16,9 @@ Reddit clone built with Reactjs, and Nodejs.
 
 <img src="https://user-images.githubusercontent.com/16297114/170084140-02c23ac7-e526-485a-98fa-de78dcf4fd92.png" width="300px" alt="mobile-view"/>
 
+![ind-post](https://user-images.githubusercontent.com/16297114/170506676-ffe2cb04-fc6e-4bac-8ae6-89804e485b8d.png)
+![ind-post2](https://user-images.githubusercontent.com/16297114/170506696-4fa5dd38-a3b8-4789-9179-48e778f380d5.png)
+
 
 
 ------
