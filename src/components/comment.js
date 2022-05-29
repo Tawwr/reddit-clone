@@ -19,7 +19,8 @@ import {
 import userImag2 from "../img/55.jpg";
 import userImag3 from "../img/32.jpg";
 import userImag4 from "../img/35.jpg";
-const Comment = () => {
+const Comment = ({ comment }) => {
+  console.log(comment)
 	return (
 		<>
 			<ListItem alignItems='flex-start'>
@@ -27,10 +28,10 @@ const Comment = () => {
 					<Avatar alt='Remy Sharp' src={userImag2} />
 				</ListItemAvatar>
 				<ListItemText
-					primary='Mark Etsy'
+					primary={comment?.userId}
 					secondary={
 						<>
-							{" — Wish I could come, but I'm out of town this…"}
+							{comment?.body}
 							<br />
 							<Typography
 								sx={{ display: 'inline' }}
