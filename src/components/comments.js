@@ -18,7 +18,6 @@ const Comments = ({comments}) => {
 					<Divider />
 					<List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper", borderRadius: 4 }}>
             {comments.map(comment => <Comment key={comment.id} comment={comment} />)}
-						<Comment />
 					</List>
 				</Paper>
     </>

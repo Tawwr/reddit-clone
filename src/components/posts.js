@@ -23,7 +23,7 @@ const Posts = () => {
 				<Grid container spacing={4} style={{ marginTop: '30px' }}>
 					{posts.map(post => (
 						<Grid key={post.id} item xs={12}>
-							<Post post={post} />{' '}
+							<Post post={post} showLink={true} />{' '}
 						</Grid>
 					))}
 				</Grid>

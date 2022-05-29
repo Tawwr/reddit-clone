@@ -8,8 +8,8 @@ import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import ThumbDownIcon from "@mui/icons-material/ThumbDown";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import userImag from "../img/97.jpg";
-
-const Post = ({ post }) => {
+import moment from 'moment'
+const Post = ({ post, showLink }) => {
 	const dispatch = useDispatch();
 
 	const handleDelete = () => {
@@ -35,7 +35,7 @@ const Post = ({ post }) => {
 					titleTypographyProps={{ variant: "subtitle2" }}
 					subheaderTypographyProps={{ variant: "caption" }}
 					title="Islam Sayed"
-					subheader="December 9 at 11:43 AM"
+					subheader={moment(post.createdAt).format('MMMM Do YYYY, h:mm a')}
 				/>
 
 				<CardContent>
@@ -66,11 +66,13 @@ const Post = ({ post }) => {
 									<IconButton onClick={handleComment} color="primary" aria-label="upload picture" component="span">
 										<CommentIcon sx={{ fontSize: 16, color: "#777" }} />
 									</IconButton>
-									<Typography variant="caption">{post.downVotesTotal}</Typography>
+									<Typography variant="caption">{post.commentsTotal}</Typography>
 								</Box>
 							</Grid>
 						</Grid>
 						<Grid item>
+						{showLink ? (
+							
 							<Link to={"/post/" + post.id } style={{ textDecoration: "none" }}>
 								<Button
 									variant="text"
@@ -80,12 +82,20 @@ const Post = ({ post }) => {
 									Open post
 								</Button>
 							</Link>
+						
+						): (
+							<Link to="/" style={{ textDecoration: "none" }}>
+							<Button
+								variant="text"
+								size="small"
+								sx={{ color: "#000000de", textTransform: "none", fontSize: "12px", marginRight: "10px" }}
+								endIcon={<ArrowRightAltIcon sx={{ fontSize: 16, color: "#777" }} />}>
+								Back to posts
+							</Button>
+						</Link>
+						)}
 						</Grid>
 					</Grid>
-					{/* <PostEditForm title={post.title} body={post.body} userId={post.userId} id={post.id} />
-					<Button sx={{ marginLeft: "10px" }} color="warning" variant="contained" size="small" onClick={handleDelete}>
-						Delete
-					</Button> */}
 				</CardActions>
 			</Card>
 		</Paper>
