@@ -9,18 +9,17 @@ import {Routes, Route} from "react-router-dom";
 
 function App() {
   const dispatch = useDispatch()
-  const state = useSelector(state => state.posts)
+  const posts = useSelector(state => state.posts)
   useEffect(() => {
     dispatch(getPosts())
-  } ,[])
-  const post = state[0] 
+  } ,[]) 
 	return (
 		<div className="App">
 			<NavBar />
 			<div style={{padding: "12px"}}>
 			<Routes>
 				<Route path="/" element={<Home  />} />
-				<Route path="/post/:id" element={<PostDetails  post={post}/>} />
+				<Route path="/post/:id" element={<PostDetails  posts={posts}/>} />
 			</Routes>
 
 			</div>
