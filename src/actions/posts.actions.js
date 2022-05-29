@@ -24,7 +24,7 @@ export const addPost = (newPost) => async (dispatch) => {
 
 // Update post
 export const updatePost = (id, updatedPost) => async (dispatch) => {
-	console.log(updatedPost)
+	
 	try {
 		await api.updatePost(id, updatedPost);
 		const { data } = await api.getPosts();
