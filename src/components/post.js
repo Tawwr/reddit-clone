@@ -28,7 +28,7 @@ const Post = ({ post }) => {
 	};
 
 	return (
-		<Paper sx={{ maxWidth: 550 }}>
+		<Paper  sx={{ maxWidth: 640 }}>
 			<Card>
 				<CardHeader
 					avatar={<Avatar alt="Remy Sharp" src={userImag} />}
