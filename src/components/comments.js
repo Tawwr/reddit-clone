@@ -1,24 +1,14 @@
 import {
-	IconButton,
-	Card,
-	CardHeader,
-	Button,
-	CardContent,
-	CardActions,
-	Grid,
+
 	Typography,
-	Box,
 	Paper,
-	Avatar,
 	List,
-	ListItem,
-	ListItemText,
+
 	Divider,
-	ListItemAvatar,
 } from "@mui/material";
 
 import Comment from "./comment";
-const Comments = () => {
+const Comments = ({comments}) => {
   return ( 
     <>
       <Paper sx={{ maxWidth: 640 }}>
@@ -27,6 +17,7 @@ const Comments = () => {
 					</Typography>
 					<Divider />
 					<List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper", borderRadius: 4 }}>
+            {comments.map(comment => <Comment key={comment.id} comment={comment} />)}
 						<Comment />
 					</List>
 				</Paper>
